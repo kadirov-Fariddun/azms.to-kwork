@@ -650,7 +650,16 @@ textarea {
 .flex-between {
     justify-content: space-between;
 }
-
+@media(max-width:1020px){
+    .head-search-mobile{
+        display: block;
+    }
+}
+@media(min-width:1020px){
+    .head-search-mobile{
+        display: none;
+    }
+}
 .m-children-right-1 > *:not(:last-child) {
     margin-right: 1rem;
 }
@@ -1550,7 +1559,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transform: scale(2.5);
+    transform: scale(4.5);
 }
 
 
@@ -1616,6 +1625,7 @@ button {
 .alert.alert-green {
     background-color: var(--green);
     color: white;
+    padding: 10px 25px;
 }
 
 .alert svg {
@@ -1879,7 +1889,7 @@ button {
     overflow: hidden;
   }
 .animate-animated{
-    width: 200px;
+    width: 150px;
     height: 100%;
     background: linear-gradient(to right, transparent 0%, #bbbbbb 50%, transparent 100%);
     position: absolute;
@@ -1893,7 +1903,7 @@ button {
     z-index:7;
   }
 .animate-animated-2{
-    width: 200px;
+    width: 150px;
     height: 100%;
     background: linear-gradient(to right, transparent 0%, #bbbbbb 50%, transparent 100%);
     position: absolute;
@@ -1908,7 +1918,7 @@ button {
     z-index:7;
   }
 .animate-animated-3{
-    width: 200px;
+    width: 150px;
     height: 100%;
     background: linear-gradient(to right, transparent 0%, #bbbbbb 50%, transparent 100%);
     position: absolute;
@@ -2048,4 +2058,12 @@ button {
   .modal-button:hover {
     background: rgba(225, 225, 225, 0.5);
     border-radius: 0 0 10px 10px;
+  }
+  .head-search{
+    display: block;
+  }
+  @media(max-width:1020px){
+    .head-search{
+        display: none;
+  }
   }

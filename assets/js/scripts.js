@@ -280,12 +280,4 @@ $(function() {
   $(".header__results").click(function( e ) {
     e.stopPropagation();
   });
-  // kwork script 
-  let modalFilter = document.querySelector('.wrapper-modal-filter');
-  console.log(modalFilter.classList.add('active'));
-  function someWaitShow(time,elem,cl) {
-    setTimeout(() => {
-        elem.classList.add(cl);
-    }, time);
-  };
-  someWaitShow(1000,modalFilter,'.wrapper-modal-filter-active');
+
